@@ -27,10 +27,12 @@ namespace _18_csdlnc19_1_da2
         public string Ten_NV { get; set; }
         public System.DateTime NgaySinh_NV { get; set; }
         public string DienThoai_NV { get; set; }
+        public string Email_NV { get; set; }
         public bool GT_NV { get; set; }
         public int DiaChi_NV { get; set; }
         public string ChucVu { get; set; }
         public int MucLuong { get; set; }
+        public int SoNgayNghi { get; set; }
         public int Ma_CN { get; set; }
         public string Username { get; set; }
         public string Pass { get; set; }

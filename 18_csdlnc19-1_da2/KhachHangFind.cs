@@ -56,23 +56,19 @@ namespace _18_csdlnc19_1_da2
                 string find = tenspText.Text;
                 ConCungShopEntities conCung = new ConCungShopEntities();
                 List<SanPham> sps = conCung.SanPhams.ToList();
-                List<DoiTac> dts = conCung.DoiTacs.ToList();
-                List<Loai> types = conCung.Loais.ToList();
                 tendgv.Rows.Clear();
                 int tt = 0;
                 foreach (var item in sps)
                     if (item.Ten_SP.ToLower().Contains(find.ToLower()))
                     {
                         tt++;
-                        var nhanHieu = dts.Where(p => p.Ma_DT == item.NhanHieu).Select(p => p.Ten_DT).ToList();
-                        var loai = types.Where(p => p.Ma_Loai == item.Loai).Select(p => p.Ten_Loai).ToList();
                         int index = tendgv.Rows.Add();
                         tendgv.Rows[index].Cells[0].Value = item.Ma_SP;
                         tendgv.Rows[index].Cells[1].Value = item.Ten_SP;
                         tendgv.Rows[index].Cells[2].Value = item.GiaBan;
                         tendgv.Rows[index].Cells[3].Value = item.HanDung;
-                        tendgv.Rows[index].Cells[4].Value = nhanHieu[0];
-                        tendgv.Rows[index].Cells[5].Value = loai[0];
+                        tendgv.Rows[index].Cells[4].Value = item.Ten_NhanHieu;
+                        tendgv.Rows[index].Cells[5].Value = item.Ten_Loai;
                         tendgv.Rows[index].Cells[6].Value = item.SoLuongTon;
                         tendgv.Rows[index].Cells[7].Value = item.CTKH;
                     }

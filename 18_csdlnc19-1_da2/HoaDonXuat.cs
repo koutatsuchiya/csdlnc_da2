@@ -23,9 +23,12 @@ namespace _18_csdlnc19_1_da2
         public int Ma_DX { get; set; }
         public System.DateTime NgayLap_DX { get; set; }
         public int Ma_KH { get; set; }
+        public string Ten_KH { get; set; }
+        public string DienThoai_KH { get; set; }
         public int Ma_CN { get; set; }
         public int Ma_NV_Lap { get; set; }
         public Nullable<int> Ma_CTyVC { get; set; }
+        public string Ten_CtyVC { get; set; }
         public Nullable<int> Ma_The { get; set; }
         public Nullable<int> TongTien { get; set; }
         public string TinhTrang_DX { get; set; }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c97d2eb7cdf44177ac4de0b75de3746f" Name="Diagram1">
+        <EntityTypeShape EntityType="ConCungShopModel.ChiNhanh" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.CT_DN" Width="1.5" PointX="13.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.CT_DX" Width="1.5" PointX="13.5" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.CTKhuyenMai" Width="1.5" PointX="6" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.CtyVanChuyen" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.DanhGia" Width="1.5" PointX="13.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.DiaChi" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.DoiTac" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.HinhAnh_SP" Width="1.5" PointX="10.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.HoaDonNhap" Width="1.5" PointX="11.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.HoaDonXuat" Width="1.5" PointX="8.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.KhachHang" Width="1.5" PointX="3" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.Loai" Width="1.5" PointX="6" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.LSLuong" Width="1.5" PointX="10.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.NhanVien" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.SanPham" Width="1.5" PointX="8.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.TheTinDung" Width="1.5" PointX="5.25" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConCungShopModel.VetGiaSP" Width="1.5" PointX="10.5" PointY="23.5" IsExpanded="true" />
+        <AssociationConnector Association="ConCungShopModel.fk_ChiNhanh_DiaChi" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_ChiNhanh_QuanLy" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonNhap_ChiNhanh" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonXuat_ChiNhanh" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_NhanVien_ChiNhanh" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_CTDN_DonNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_CTDN_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_CTDX_DonXuat" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_CTDX_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_SanPham_CTKM" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_CTVC_DiaChi" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonXuat_CTVC" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DanhGia_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DanhGia_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DoiTac_DiaChi" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_KhachHang_DiaChi" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_NhanVien_DiaChi" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonNhap_NCC" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_SanPham_NhanHieu" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_HinhAnh_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonNhap_NVNhan" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonXuat_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonXuat_NVLap" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_DonXuat_TheTinDung" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_TheTinDung_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_SanPham_Loai" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_LSLuong_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ConCungShopModel.fk_VetGia_SanPham" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

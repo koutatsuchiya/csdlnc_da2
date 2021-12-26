@@ -12,16 +12,12 @@ namespace _18_csdlnc19_1_da2
     using System;
     using System.Collections.Generic;
     
-    public partial class DanhGia
+    public partial class HinhAnh_SP
     {
-        public int Ma_KH { get; set; }
+        public int Ma_Anh { get; set; }
+        public string Link_Anh { get; set; }
         public int Ma_SP { get; set; }
-        public string Ten_KH { get; set; }
-        public System.DateTime Ngay_DG { get; set; }
-        public int SoSao { get; set; }
-        public string BinhLuan { get; set; }
     
-        public virtual KhachHang KhachHang { get; set; }
         public virtual SanPham SanPham { get; set; }
     }
 }

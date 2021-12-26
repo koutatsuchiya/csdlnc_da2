@@ -20,6 +20,7 @@ namespace _18_csdlnc19_1_da2
             this.CT_DN = new HashSet<CT_DN>();
             this.CT_DX = new HashSet<CT_DX>();
             this.DanhGias = new HashSet<DanhGia>();
+            this.HinhAnh_SP = new HashSet<HinhAnh_SP>();
             this.VetGiaSPs = new HashSet<VetGiaSP>();
         }
     
@@ -29,7 +30,9 @@ namespace _18_csdlnc19_1_da2
         public int GiaBan { get; set; }
         public System.DateTime HanDung { get; set; }
         public int NhanHieu { get; set; }
+        public string Ten_NhanHieu { get; set; }
         public int Loai { get; set; }
+        public string Ten_Loai { get; set; }
         public int SoLuongTon { get; set; }
         public Nullable<int> CTKH { get; set; }
     
@@ -41,6 +44,8 @@ namespace _18_csdlnc19_1_da2
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DanhGia> DanhGias { get; set; }
         public virtual DoiTac DoiTac { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HinhAnh_SP> HinhAnh_SP { get; set; }
         public virtual Loai Loai1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VetGiaSP> VetGiaSPs { get; set; }

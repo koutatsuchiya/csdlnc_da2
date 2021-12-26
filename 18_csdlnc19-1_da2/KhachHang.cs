@@ -26,6 +26,7 @@ namespace _18_csdlnc19_1_da2
         public string Ten_KH { get; set; }
         public System.DateTime NgaySinh_KH { get; set; }
         public string DienThoai_KH { get; set; }
+        public string Email_KH { get; set; }
         public bool GT_KH { get; set; }
         public int DiaChi_KH { get; set; }
         public string Username { get; set; }
