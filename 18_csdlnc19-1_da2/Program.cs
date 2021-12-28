@@ -16,8 +16,7 @@ namespace _18_csdlnc19_1_da2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KhachHangFind());
-            //Application.Run(new AdminFunc());
+            Application.Run(new login());
         }
     }
 }
